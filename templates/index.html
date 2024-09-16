@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Investimentos</title>
+    <link rel="stylesheet" href="static/styles.css">
+
+    <!-- Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Adapter de Datas para Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard de Desempenho de Investimentos</h1>
+        </div>
+
+        <!-- Seleção de Ações -->
+        <div class="stock-selection">
+            <h2>Selecione as Ações</h2>
+            <div class="stock-controls">
+                <select id="stockSelect" class="select-modern" multiple>
+                    <option value="AAPL">Apple (AAPL)</option>
+                    <option value="META">Meta (META)</option>
+                    <option value="NVDA">NVIDIA (NVDA)</option>
+                    <option value="KO">Coca-Cola (KO)</option>
+                    <option value="NU">Nubank (NU)</option>
+                    <option value="ALL">Todos</option>
+                </select>
+                <button class="btn-primary" onclick="updateChart()">Atualizar Gráfico</button>
+            </div>
+        </div>
+        
+        <!-- Gráfico -->
+        <div class="chart-container">
+            <canvas id="performanceChart"></canvas>
+        </div>
+
+        <!-- Nova Seção para Mostrar Informações de Variação Acumulada -->
+        <div class="info-section">
+            <h3>Variação Acumulada</h3>
+            <p id="varAcumulada">Selecione uma ação para ver a variação acumulada.</p>
+        </div>
+    </div>
+
+    <!-- jQuery (necessário para Select2) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+
+    <!-- Certifique-se de que o script JS está carregado depois de todos os elementos do HTML -->
+    <script src="static/scripts.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#stockSelect').select2({
+                placeholder: "Selecione as Ações",
+                allowClear: true,
+                width: '100%' // Largura total do select
+            });
+        });
+    </script>
+</body>
+</html>
