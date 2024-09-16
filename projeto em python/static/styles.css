@@ -1,0 +1,144 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Remove o scroll */
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #007bff;
+    margin: 0;
+}
+
+/* Seção de seleção de ações */
+.stock-selection {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stock-selection h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stock-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaço entre select e botão */
+}
+
+#stockSelect {
+    width: 300px; /* Aumenta a largura da caixa de seleção */
+    height: 150px; /* Aumenta a altura da caixa de seleção */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    resize: vertical; /* Permite ao usuário ajustar verticalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão primário */
+.btn-primary {
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 12px 20px; /* Aumenta o tamanho do botão */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem; /* Tamanho de fonte ajustado */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 50px; /* Altura ajustada para alinhar com o select */
+    text-align: center; /* Centraliza o texto */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Contêiner do gráfico */
+.chart-container {
+    position: relative;
+    height: 65vh; /* Altura ajustada para caber na tela */
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Remove o overflow */
+}
+
+.chartjs-legend {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffffcc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para a nova seção de informações */
+.info-section {
+    margin-top: 20px; /* Espaço acima da seção */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-section h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
