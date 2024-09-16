@@ -4,7 +4,7 @@ let datasets = [];  // Variável global para armazenar datasets
 // Função para buscar dados JSON do backend
 async function fetchData() {
     try {
-        const response = await fetch('/load_data');
+        const response = await fetch('static/data.json');  // Caminho atualizado para um arquivo JSON estático
         const data = await response.json();
         return data;
     } catch (error) {
