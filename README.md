@@ -2,7 +2,7 @@
 
 ## Visão Geral do Projeto
 
-Este projeto foi desenvolvido como um trabalho para a disciplina de **Mercado de Capitais** no curso de [nome do curso] na [nome da instituição]. O objetivo do projeto é criar um **Dashboard de Análise de Desempenho de Ativos** que compara a evolução percentual de diversos ativos do mercado financeiro em relação a um fundo de renda fixa específico, o **Western Asset**. A análise visa identificar um **posicionamento seguro e estratégico** para investidores que buscam retornos superiores ao CDI com risco controlado, investindo em ativos de empresas consolidadas e big-techs.
+Este projeto foi desenvolvido como um trabalho para a disciplina de **Mercado de Capitais** no curso de Ciências Econômicas na Universidade Federal Rural de Pernambuco. O objetivo do projeto é criar um **Dashboard de Análise de Desempenho de Ativos** que compara a evolução percentual de diversos ativos do mercado financeiro em relação a um fundo de renda fixa específico, o **Western Asset**. A análise visa identificar um **posicionamento seguro e estratégico** para investidores que buscam retornos superiores ao CDI com risco controlado, investindo em ativos de empresas consolidadas e big-techs.
 
 ## Motivação
 
@@ -48,12 +48,6 @@ A análise mostrou que a combinação de ativos de **empresas consolidadas** (co
 2. Navegue até a pasta do projeto e abra o arquivo `index.html` no seu navegador.
 3. Para atualizar o gráfico, selecione os ativos desejados e clique no botão "Atualizar Gráfico".
 4. A variação acumulada será exibida logo abaixo do gráfico, fornecendo uma visão clara do desempenho dos ativos selecionados em comparação com o CDI.
-
-## Como Publicar no GitHub Pages
-
-1. **Crie um Repositório no GitHub**: Suba todos os arquivos do projeto para o repositório.
-2. **Configure o GitHub Pages**: Nas configurações do repositório, vá para a seção "GitHub Pages" e selecione a branch principal (geralmente `main`) e a pasta raiz (`/`).
-3. **Acesse a Página**: Após alguns minutos, o GitHub Pages disponibilizará um link para acessar sua aplicação online.
 
 ## Conclusão
 
